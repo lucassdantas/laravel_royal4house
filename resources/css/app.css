@@ -6,11 +6,25 @@
 @source '../**/*.js';
 
 @theme {
-    --color-light-yellow: '#FAE3B8';
-    --color-dark-yellow:'#9D7945';
-    --color-wpp-green:'#25d366';
+    --color-light-yellow: #FAE3B8;
+    --color-dark-yellow:#9D7945;
+    --color-wpp-green:#25d366;
 }
 
 html{
   font-family:'DM Sans', 'sans-serif';
 }
+
+@keyframes slideShow {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-slideShow {
+  width: 300%;
+  animation: slideShow 12s infinite;
+}
+
+
