@@ -32,23 +32,9 @@
   <x-section >
     <h1 class='text-2xl'>Oportunidades à venda exclusivas para você</h1>
     <x-divisor/>
-    <div class='flex gap-4 flex-wrap items-center justify-center'>
-<x-real-state-card
-        image-url="/imgs/imovel01.jpg"
-        title="Casa de Alto Padrão no Alphaville"
-        neighborhood="Alphaville, Barueri"
-        type="Casa"
-        rooms="4"
-        suites="3"
-        parking-spaces="4"
-        area="320"
-        price="2.300.000"
-        code="R4H-001"
-        more-details-url="/imovel/alphaville-casa-001"
-      />
-
+    <div class='flex lg:flex-row flex-col gap-4 gap-y-8 items-center justify-between flex-wrap my-4'>
       <x-real-state-card
-        image-url="/imgs/imovel02.jpg"
+        imageUrl="/imgs/imoveis/2/2.jpg"
         title="Apartamento com Vista Mar em Balneário Camboriú"
         neighborhood="Centro, Balneário Camboriú"
         type="Apartamento"
@@ -59,20 +45,6 @@
         price="1.450.000"
         code="R4H-002"
         more-details-url="/imovel/balneario-apto-002"
-      />
-
-      <x-real-state-card
-        image-url="/imgs/imovel03.jpg"
-        title="Cobertura Duplex no Recreio dos Bandeirantes"
-        neighborhood="Recreio, Rio de Janeiro"
-        type="Cobertura"
-        rooms="5"
-        suites="4"
-        parking-spaces="3"
-        area="400"
-        price="3.800.000"
-        code="R4H-003"
-        more-details-url="/imovel/recreio-cobertura-003"
       />
 
     </div>

@@ -6,19 +6,20 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class realStateCard extends Component
+class RealStateCard extends Component
 {
-  private $imageUrl;
-  private $title;
-  private $neighborhood;
-  private $type;
-  private $rooms;
-  private $suites;
-  private $parkingSpaces;
-  private $area;
-  private $price;
-  private $code;
-  private $moreDetailsUrl;
+  public $imageUrl;
+  public $title;
+  public $neighborhood;
+  public $condominium;
+  public $type;
+  public $rooms;
+  public $suites;
+  public $parkingSpaces;
+  public $area;
+  public $price;
+  public $code;
+  public $moreDetailsUrl;
 
   public function __construct(
     $imageUrl,
@@ -31,7 +32,8 @@ class realStateCard extends Component
     $area,
     $price,
     $code,
-    $moreDetailsUrl
+    $moreDetailsUrl,
+    $condominium
   ) {
     $this->imageUrl = $imageUrl;
     $this->title = $title;
@@ -44,6 +46,7 @@ class realStateCard extends Component
     $this->price = $price;
     $this->code = $code;
     $this->moreDetailsUrl = $moreDetailsUrl;
+    $this->condominium = $condominium;
   }
 
   /**
