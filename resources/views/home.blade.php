@@ -33,20 +33,23 @@
     <h1 class='text-2xl'>Oportunidades à venda exclusivas para você</h1>
     <x-divisor/>
     <div class='flex lg:flex-row flex-col gap-4 gap-y-8 items-center justify-between flex-wrap my-4'>
+      @foreach ( $real_states as $real_state)
+      
       <x-real-state-card
-        imageUrl="/imgs/imoveis/2/2.jpg"
-        title="Apartamento com Vista Mar em Balneário Camboriú"
-        neighborhood="Centro, Balneário Camboriú"
-        type="Apartamento"
-        rooms="3"
-        suites="2"
-        parking-spaces="2"
-        area="150"
-        price="1.450.000"
-        code="R4H-002"
-        more-details-url="/imovel/balneario-apto-002"
+        imageUrl="{{$real_state->image_url}}"
+        title="{{$real_state->condominium_name}}"
+        condominium="{{$real_state->condominium_name}}"
+        neighborhood="{{$real_state->neighborhood_name}}"
+        type="{{$real_state->type_name}}"
+        rooms="{{$real_state->rooms}}"
+        suites="{{$real_state->suites}}"
+        parkingSpaces="{{$real_state->parking_spaces}}"
+        area="{{$real_state->area}}"
+        price="{{$real_state->price}}"
+        code="{{$real_state->code}}"
+        more-details-url="{{$real_state->slug}}"
       />
-
+      @endforeach
     </div>
   </x-section>
 </section>
