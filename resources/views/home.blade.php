@@ -21,7 +21,7 @@
   <x-section class='bg-black '>
     <div class='flex justify-center items-center py-4 gap-4 text-white'>
       <img src='/imgs/royal-icon.svg' alt='Ícone royal' />
-      Movimento gera Movimento
+      <span>Movimento gera Movimento</span>
       <img src='/imgs/royal-icon.svg' alt='Ícone royal' />
 
     </div>
