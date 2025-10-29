@@ -4,6 +4,7 @@ import { RealStateCard } from "@/app/components/entities/RealStateCard";
 import { Limiter } from "@/app/components/Limiter";
 import { RealStateFilterByCode, RealStateFilterShort } from "@/app/components/RealStateFilter";
 import { Section } from "@/app/components/Section";
+import { Title } from "@/app/components/Title";
 import { useState } from "react";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
       <Limiter className="relative z-20 h-full flex flex-col justify-center items-center text-center">
-        <h1 className="text-3xl md:text-5xl font-semibold w-[600px]">O imóvel perfeito para quem busca sofisticação e conforto.</h1>
+        <Title tag='h1' className='text-5xl w-[750px]'>O imóvel perfeito para quem busca sofisticação e conforto.</Title>
         <div className="bg-[rgba(255,255,255,.4)] mt-8 p-8 px-12 rounded-full w-full max-w-[1100px]">
           {!realStateFilterByCode && <RealStateFilterShort/>}
           {realStateFilterByCode && <RealStateFilterByCode/>}
@@ -33,17 +34,17 @@ export default function Home() {
     </section>
 
     <Section className='bg-black '>
-      <div className='flex justify-center items-center py-4 gap-4 text-white'>
+      <div className='flex justify-center items-center py-8 gap-8 text-white'>
         <img src='/imgs/royal-icon.svg' alt='Ícone royal' />
-        <span>Movimento gera Movimento</span>
+        <span className='text-2xl'>Movimento gera Movimento</span>
         <img src='/imgs/royal-icon.svg' alt='Ícone royal' />
 
       </div>
     </Section>
 
-    <Section >
-      <h1 className='text-2xl'>Oportunidades à venda exclusivas para você</h1>
-      <Divisor/>
+    <Section className='py-24' >
+      <Title tag='h2' className=''>Oportuniades à venda exclusiva para você </Title>
+      <Divisor />
       <div className='flex lg:flex-row flex-col gap-4 gap-y-8 items-center justify-between flex-wrap my-4'>
         
         <RealStateCard

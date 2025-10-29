@@ -15,7 +15,7 @@ export const RealStateFilterShort = () => {
         <option>aa</option>
         <option>aa</option>
       </select>
-      <button className='bg-light-yellow rounded-full py-2 px-4 text-black w-[400px] '>Buscar imóvel</button>
+      <button className='bg-light-yellow rounded-full py-2 px-4 text-black w-[500px] '>Buscar imóvel</button>
     </form>
   )
 }
